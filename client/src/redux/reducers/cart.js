@@ -23,11 +23,16 @@ export default function(state = initialState, action) {
       });
       return state;
     }
+    // https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns/#inserting-and-removing-items-in-arrays
     case REMOVE_FROM_CART: {
       const product = action.payload;
+      const newAllItems = [...state.allItems];
       let indexToRemove = state.allItems.indexOf(product);
-      state.allItems.splice(indexToRemove, 1);
-      return state;
+      newAllItems.splice(indexToRemove, 1);
+      return {
+        ...state,
+        allItems: newAllItems
+      };
     }
     default:
       return state;

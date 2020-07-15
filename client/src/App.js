@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="relative pb-10 min-h-screen">
       <Router>
-        <div className="">
+        <div>
           <Header />
         </div>
         <div className="my-32">

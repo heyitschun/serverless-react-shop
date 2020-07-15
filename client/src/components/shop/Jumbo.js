@@ -17,12 +17,12 @@ function Jumbo() {
         <div className="flex justify-center mt-10">
           <div className="flex-col w-64">
             <Link to="/lifestyle">
-              <button className="opacity-75 hover:opacity-100 bg-black text-white tracking-widest uppercase text-xs py-2 w-full my-2 rounded-none">
+              <button className="opacity-100 hover:opacity-75 bg-black text-white tracking-widest uppercase text-xs py-2 w-full my-2 rounded-none">
                 Summertime Sassiness
               </button>
             </Link>
             <Link to="/inspire">
-              <button className="opacity-75 hover:opacity-100 bg-black text-white tracking-widest uppercase text-xs py-2 w-full my-2 rounded-none">
+              <button className="opacity-100 hover:opacity-75 bg-black text-white tracking-widest uppercase text-xs py-2 w-full my-2 rounded-none">
                 How you've inspired us
               </button>
             </Link>
