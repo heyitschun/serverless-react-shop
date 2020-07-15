@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 function Header() {
   return (
-    <header className="fixed bg-white top-0 w-full shadow-md z-40">
+    <header className="fixed bg-white shadow-md top-0 w-full z-40">
       <div className="flex">
         <div className="flex justify-end w-1/3 p-4">
           <Menu/>
