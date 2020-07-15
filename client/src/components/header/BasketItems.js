@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../../redux/actions";
-import faker from "faker";
+import { random } from "faker";
 
 function BasketItems(props) {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ function BasketItems(props) {
     basketList = 
       basket.map(item =>
         <li
-          key={faker.random.uuid().slice(-4)}
+          key={random.uuid().slice(-4)}
           className="flex-auto mt-1"
         >
           <div className="flex">
