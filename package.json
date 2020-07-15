@@ -1,0 +1,22 @@
+{
+  "name": "serverless-react-shop",
+  "version": "1.0.0",
+  "description": "Frontend for a fake webshop built React.js and Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyitschun/serverless-react-shop.git"
+  },
+  "author": "Chun Poon <heyitschun@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyitschun/serverless-react-shop/issues"
+  },
+  "homepage": "https://github.com/heyitschun/serverless-react-shop#readme",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
