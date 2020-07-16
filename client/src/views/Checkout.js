@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { random } from "faker";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../redux/actions";
 import { Link } from "react-router-dom";
 
 function Checkout() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const dispatch = useDispatch();
   const basket = useSelector(state => state.cart.allItems);
   let content = <li>Empty</li>
