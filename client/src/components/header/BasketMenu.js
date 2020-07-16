@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useTransition, animated } from "react-spring";
+import { useSelector } from "react-redux";
 import BasketItems from "./BasketItems";
 
 function BasketMenu() {
+  const basket = useSelector(state => state.cart.allItems);
   const [showMenu, setShowMenu] = useState(false);
   const maskTransitions = useTransition(showMenu, null, {
     from: { position: 'absolute', opacity: 0 },
@@ -14,12 +16,13 @@ function BasketMenu() {
     enter: { opacity: 1, transform: "translateX(-80%)" },
     leave: { opacity: 0, transform: "translateX(-50%)" }
   });
-  
   return (
     <div>
       <div onClick={() => setShowMenu(!showMenu)}>
         <i className="material-icons cursor-pointer">shopping_basket</i>
-        <span>0</span>
+        <span className="font-sans cursor-pointer">
+          {basket.length}
+        </span>
       </div>
       <div>
         {
