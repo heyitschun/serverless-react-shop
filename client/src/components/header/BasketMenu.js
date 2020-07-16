@@ -19,6 +19,7 @@ function BasketMenu() {
     <div>
       <div onClick={() => setShowMenu(!showMenu)}>
         <i className="material-icons cursor-pointer">shopping_basket</i>
+        <span>0</span>
       </div>
       <div>
         {

@@ -45,7 +45,7 @@ function BasketItems(props) {
           <button className="bg-gray-700 hover:bg-gray-600 text-white text-xs uppercase tracking-widest w-full md:w-16 py-1 px-2 my-2 md:m-2">Apply</button>
           <button className="bg-gray-700 hover:bg-gray-600 text-white text-xs uppercase tracking-widest w-full md:w-1/3 py-1 px-2 my-2 float-right">Checkout</button>
         </li>
-        <li className="flex justify-center">
+        <li className="flex-col md:flex-auto text-center mt-3">
           <i
             className="pt-4 material-icons hover:text-orange-500 cursor-pointer mb-3"
             onClick={props.closeMenu}

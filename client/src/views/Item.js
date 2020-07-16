@@ -33,7 +33,7 @@ function Item() {
       inStockContent = <button
         onClick={() => dispatch(addToCart(product.data))}
         className="bg-gray-700 hover:bg-gray-600 text-white text-sm uppercase tracking-widest shadow-lg hover:shadow-xl py-1 px-2">
-        Add to cart
+        Add to basket
       </button>
     }
     content =
