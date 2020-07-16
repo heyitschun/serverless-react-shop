@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../../redux/actions";
 import { random } from "faker";
@@ -42,8 +43,13 @@ function BasketItems(props) {
         </li>
         <li className="flex-col md:flex-auto mt-3">
           <input className="border border-gray-300 outline-none focus:shadow-md focus:bg-gray-100 text-xs w-full md:w-1/3 p-1" placeholder="Enter promo code..."></input>
-          <button className="bg-gray-700 hover:bg-gray-600 text-white text-xs uppercase tracking-widest w-full md:w-16 py-1 px-2 my-2 md:m-2">Apply</button>
-          <button className="bg-gray-700 hover:bg-gray-600 text-white text-xs uppercase tracking-widest w-full md:w-1/3 py-1 px-2 my-2 float-right">Checkout</button>
+          <button className="bg-black hover:opacity-75 text-white text-xs uppercase tracking-widest w-full md:w-16 py-1 px-2 my-2 md:m-2">Apply</button>
+          <Link to="/checkout">
+            <button
+              className="bg-black hover:opacity-75 text-white text-xs uppercase tracking-widest w-full md:w-1/3 py-1 px-2 my-2 float-right"
+              onClick={props.closeMenu}
+            >Checkout</button>
+          </Link>
         </li>
         <li className="flex-col md:flex-auto text-center mt-3">
           <i

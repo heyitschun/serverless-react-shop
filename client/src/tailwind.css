@@ -636,18 +636,6 @@ video {
   background-color: rgba(247, 250, 252, var(--bg-opacity));
 }
 
-.bg-gray-700{
-  --bg-opacity: 1;
-  background-color: #4a5568;
-  background-color: rgba(74, 85, 104, var(--bg-opacity));
-}
-
-.bg-red-200{
-  --bg-opacity: 1;
-  background-color: #fed7d7;
-  background-color: rgba(254, 215, 215, var(--bg-opacity));
-}
-
 .bg-red-300{
   --bg-opacity: 1;
   background-color: #feb2b2;
@@ -658,12 +646,6 @@ video {
   --bg-opacity: 1;
   background-color: #90cdf4;
   background-color: rgba(144, 205, 244, var(--bg-opacity));
-}
-
-.hover\:bg-gray-600:hover{
-  --bg-opacity: 1;
-  background-color: #718096;
-  background-color: rgba(113, 128, 150, var(--bg-opacity));
 }
 
 .focus\:bg-gray-100:focus{
@@ -1000,6 +982,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1244,6 +1231,10 @@ video {
 
 body {
   font-family: "Varela Round", Helvetica, Georgia, Times, 'Times New Roman', serif;
+}
+
+a, button {
+  transition: 0.25s ease-in-out;
 }
 
 .shop-logo {
@@ -1542,6 +1533,11 @@ body {
 
   .md\:p-3{
     padding: 0.75rem;
+  }
+
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:pb-8{

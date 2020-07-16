@@ -32,7 +32,7 @@ function Item() {
     } else {
       inStockContent = <button
         onClick={() => dispatch(addToCart(product.data))}
-        className="bg-gray-700 hover:bg-gray-600 text-white text-sm uppercase tracking-widest shadow-lg hover:shadow-xl py-1 px-2">
+        className="bg-black hover:opacity-75 text-white text-sm uppercase tracking-widest shadow-lg hover:shadow-xl py-1 px-2">
         Add to basket
       </button>
     }

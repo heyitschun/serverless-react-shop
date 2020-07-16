@@ -9,6 +9,7 @@ import Item from "./views/Item";
 import Collection from "./views/Collection";
 import Inspire from "./views/Inspire";
 import Sustain from "./views/Sustain";
+import Checkout from "./views/Checkout";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
@@ -35,6 +36,9 @@ function App() {
             </Route>
             <Route path="/sustain">
               <Sustain />
+            </Route>
+            <Route path="/checkout">
+              <Checkout />
             </Route>
           </Switch>
         </div>

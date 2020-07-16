@@ -43,7 +43,7 @@ function BasketMenu() {
             <animated.div
               key={key}
               style={props}
-              className="flex justify-center fixed bg-white top-32 left-auto w-4/5 md:w-2/3 xl:w-1/3 h-auto rounded-lg shadow-xl border border-gray-200 pt-8 pb-2 px-12 z-50"
+              className="flex justify-center fixed bg-white top-32 left-auto w-4/5 md:w-2/3 xl:w-1/3 h-auto rounded-lg shadow-xl border border-gray-200 pt-8 pb-2 px-6 md:px-12 z-50"
             >
               <BasketItems
                 closeMenu={() => setShowMenu(false)}

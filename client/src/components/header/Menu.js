@@ -17,7 +17,7 @@ function Menu() {
   return (
     <nav>
       <div onClick={() => setShowMenu(!showMenu)}>
-        <i className="bg-red-200 material-icons cursor-pointer">menu</i>
+        <i className="material-icons cursor-pointer">menu</i>
       </div>
       <div>
         {

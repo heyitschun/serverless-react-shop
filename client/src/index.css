@@ -12,6 +12,10 @@ body {
   font-family: "Varela Round", Helvetica, Georgia, Times, 'Times New Roman', serif;
 }
 
+a, button {
+  transition: 0.25s ease-in-out;
+}
+
 .shop-logo {
   font-family: "Pacifico", serif, cursive;
   background: linear-gradient(to left top, #00917de7, #ec4f0663, #cf9905);
