@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Comfortaa:wght@400;500;700&family=Varela+Round&family=Nosifer&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -155,7 +152,7 @@ a, button {
   width: 100%;
   text-align: right;
   font-size: 11px;
-  color: #adadad;
+  color: #d1d1d1;
   background-color: rgba(0, 0, 0, 0.418);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

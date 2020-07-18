@@ -29,7 +29,7 @@ function ProductCard(props) {
             <span className="float-right text-base">$ {props.product.price}</span>
           </Link>
         </h3>
-        <div className="font-hairline text-gray-600 text-xs text-right pb-1">
+        <div className="font-hairline text-gray-700 text-xs text-right pb-1">
           Photo by {props.product.credits}
         </div>
       </div>

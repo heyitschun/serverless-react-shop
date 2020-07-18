@@ -25,7 +25,13 @@ function BasketItems(props) {
             </div>
             <div className="text-sm md:text-base flex-col w-1/3 text-right">
               $ {item.price} <button onClick={() => 
-                dispatch(removeFromCart(item))}><i className="material-icons text-base text-gray-700 hover:text-red-400 focus:border-blue-500">remove_circle</i></button>
+                dispatch(removeFromCart(item))}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle-minus cursor-pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <circle cx="12" cy="12" r="9" />
+                      <line x1="9" y1="12" x2="15" y2="12" />
+                    </svg>
+                  </button>
             </div>
           </div>
         </li>
@@ -52,10 +58,13 @@ function BasketItems(props) {
           </Link>
         </li>
         <li className="flex-col md:flex-auto text-center mt-3">
-          <i
-            className="pt-4 material-icons hover:text-orange-500 cursor-pointer mb-3"
-            onClick={props.closeMenu}
-          >cancel</i>
+          <div className="pt-4 flex justify-center mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" onClick={props.closeMenu} className="cursor-pointer icon icon-tabler icon-tabler-circle-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <circle cx="12" cy="12" r="9" />
+              <path d="M10 10l4 4m0 -4l-4 4" />
+            </svg>
+          </div>
         </li>
       </ul>
     </div>
