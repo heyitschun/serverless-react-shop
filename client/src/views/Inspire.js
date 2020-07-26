@@ -1,4 +1,4 @@
-var faker = require('../locale/en');
+var faker = require('faker/locale/en');
 import React from "react";
 import Masonry from "react-masonry-component";
 import Loading from "../components/shop/Loading";

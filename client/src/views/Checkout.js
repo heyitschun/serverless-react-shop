@@ -1,4 +1,4 @@
-var faker = require('../locale/en');
+var faker = require('faker/locale/en');
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../redux/actions";
