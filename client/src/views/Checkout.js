@@ -1,5 +1,5 @@
+var faker = require('../locale/en');
 import React, { useEffect } from "react";
-import { random } from "faker";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../redux/actions";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ function Checkout() {
   if (basket.length !== 0) {
     content = basket.map(item => 
       <li
-        key={random.uuid().slice(-4)}
+        key={faker.random.uuid().slice(-4)}
         className="flex-auto mt-1 mb-10"
       >
         <div className="flex">
