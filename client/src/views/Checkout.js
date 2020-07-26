@@ -1,8 +1,8 @@
-var faker = require('faker/locale/en');
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../redux/actions";
 import { Link } from "react-router-dom";
+var faker = require('faker/locale/en');
 
 function Checkout() {
   useEffect(() => {

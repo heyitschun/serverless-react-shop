@@ -1,8 +1,8 @@
-var faker = require('faker/locale/en');
 import React from "react";
 import Masonry from "react-masonry-component";
 import Loading from "../components/shop/Loading";
 import { useAxiosGet } from "../hooks/HttpGetRequest";
+var faker = require('faker/locale/en');
 
 const masonryOptions = {
   transitionDuration: 0
@@ -29,7 +29,7 @@ function Inspire() {
           <div>
             <img src={elem.src} alt={elem.credits} />
             <div className="font-varela inspire-img-text-top text-right p-0 text-xs md:text-base md:p-3">
-              Submitted by: @{faker.internet.userName()}
+              Submitted by: @{internet.userName()}
             </div>
             <div className="inspire-img-text-bot">
               Credits: {elem.credits}
