@@ -12,7 +12,8 @@ function CollabItems(props) {
     <div className="container mx-auto m-10">
       <div className="md:flex flex-col md:-mx-3 justify-center">
         <div className="text-center text-base md:text-xl tracking-wider">
-          - <span className="shop-logo text-base md:text-3xl">Mock Fashion</span><i className="material-icons px-2 font-bold text-sm">close</i><span className="fakebrand-logo text-sm md:text-lg">FakeBrand</span> -
+          - <span className="shop-logo text-base md:text-3xl">Mock Fashion</span><span className="font-bold px-3">x</span>
+          <span className="fakebrand-logo text-sm md:text-lg">FakeBrand</span> -
         </div>
         <div className="mt-3 text-center">
           We collaborated with FakeBrand to create this exclusive line. 

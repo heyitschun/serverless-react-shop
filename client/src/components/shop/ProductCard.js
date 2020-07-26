@@ -11,8 +11,8 @@ function ProductCard(props) {
     overlay = <div></div>
   }
   return (
-    <div className="product-card shadow-lg rounded-0">
-      <Link to={`/item/${props.product.id}`}>
+    <div className="product-card shadow-md md:shadow-lg rounded-0">
+      <Link aria-label={props.product.name} to={`/item/${props.product.id}`}>
         <div
           style={{
             'backgroundImage': `url('${props.product.image}')`,
