@@ -17,7 +17,7 @@ function BasketItems(props) {
     basketList = 
       basket.map(item =>
         <li
-          key={random.uuid().slice(-4)}
+          key={faker.random.uuid().slice(-4)}
           className="flex-auto mt-1"
         >
           <div className="flex">
